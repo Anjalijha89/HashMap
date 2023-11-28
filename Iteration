@@ -1,0 +1,32 @@
+import java.util.*;
+public class Hashing
+{
+    public static void main(String args[])
+    {
+        //create
+        HashMap<String,Integer> hm = new HashMap<>();
+
+     
+        //2.ITERATIONS ON HASHMAP
+        hm.put("INDIA", 120);
+        hm.put("USA", 110);
+        hm.put("JAPAN", 130);
+        hm.put("INDONESIA", 140);
+        hm.put("BIHAR", 410);
+        hm.put("UP", 180);
+        hm.put("MP", 910);
+        //System.out.println(hm);
+
+        Set<String> keys = hm.keySet();
+        System.out.println(keys);
+
+        for(String k : keys)
+        {
+            System.out.println("keys="+k+ ",values="+hm.get(k));
+        }
+
+
+
+    }
+}
+
